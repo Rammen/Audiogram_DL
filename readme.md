@@ -12,6 +12,8 @@ This project includes 5 Jupyter notebooks to show my thought process and the dif
 
 Data were not included to keep the data confidential. Please add the raw CSV “Input.csv” and “output.csv” directly in this folder to run the code. 
 
+This project was run on Windows and might need some adjustment to load the CSV with another OS. 
+
 # Methodology & Thoughts Process
 
 ## 1. Understanding the context of hearing loss and audiogram
