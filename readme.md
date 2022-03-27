@@ -18,7 +18,7 @@ Data were not included to keep the data confidential. Please add the raw CSV “
 
 My initial step consisted in learning a bit more about the data of the present challenge. After looking at the input/output CSV, it seems that we are working with audiograms. Notably, I found the *Healthy Hearing* website and it vulgarized really well what is hearing loss, how an audiogram is conducted and assesses its results (input of this challenge), and how hearing aids settings are defined (output of this challenge). 
 
-![Untitled](Zepp%20-%20Rea%209d81f/Untitled.png)
+![Audiogram](audiogram.png)
 
 Specific links include:
 
@@ -122,13 +122,8 @@ In this last step, I try different 1) number of hidden layers, 2) different node
 | --- | --- | --- | --- |
 | Baseline | Results from the audiology test only (7) | MAE 0.982 (0.057) | Input layer: 7 nodes Hidden layer: 1 (10 nodes) Output layer: 7 nodes |
 | With demographics (V1) | All inputs (11), no transformation | MAE: 0.947 (0.064) | Input layer: 11 nodes Hidden layer: 1 (10 nodes) Output layer: 7 nodes |
-| With demographics (V2) | All inputs, One hot encoding of gender | MAE: 0.930 (0.080) | Input layer: 12 nodes
-Hidden layer: 1 (10 nodes)
-Output layer: 7 nodes |
-| Random Search (10x) | All inputs, One hot encoding of gender | MAE: 0.736 (0.050) | Best Model:
-Input layer: 12 nodes
-Hidden layers: 3 [48, 48, 12 nodes]
-Output layer: 7 nodes |
+| With demographics (V2) | All inputs, One hot encoding of gender | MAE: 0.930 (0.080) | Input layer: 12 nodes Hidden layer: 1 (10 nodes) Output layer: 7 nodes |
+| Random Search (10x) | All inputs, One hot encoding of gender | MAE: 0.736 (0.050) | Best Model: Input layer: 12 nodes Hidden layers: 3 [48, 48, 12 nodes] Output layer: 7 nodes |
 
 Each interaction did improve slightly the MAE of the model with our best model reaching an MAE of `0.736` showing that the tunning of each hearing aid parameter is only off by +/- 0.736. 
 
