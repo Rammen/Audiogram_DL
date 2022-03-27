@@ -120,12 +120,8 @@ In this last step, I try different 1) number of hidden layers, 2) different node
 
 |  | Features | MAE - Mean (STD) |  |
 | --- | --- | --- | --- |
-| Baseline | Results from the audiology test only (7) | MAE 0.982 (0.057) | Input layer: 7 nodes
-Hidden layer: 1 (10 nodes)
-Output layer: 7 nodes |
-| With demographics (V1) | All inputs (11), no transformation | MAE: 0.947 (0.064) | Input layer: 11 nodes
-Hidden layer: 1 (10 nodes)
-Output layer: 7 nodes |
+| Baseline | Results from the audiology test only (7) | MAE 0.982 (0.057) | Input layer: 7 nodes Hidden layer: 1 (10 nodes) Output layer: 7 nodes |
+| With demographics (V1) | All inputs (11), no transformation | MAE: 0.947 (0.064) | Input layer: 11 nodes Hidden layer: 1 (10 nodes) Output layer: 7 nodes |
 | With demographics (V2) | All inputs, One hot encoding of gender | MAE: 0.930 (0.080) | Input layer: 12 nodes
 Hidden layer: 1 (10 nodes)
 Output layer: 7 nodes |
