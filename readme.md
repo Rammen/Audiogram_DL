@@ -1,8 +1,3 @@
-# Zepp - ReadMe
-
-Date Creation: March 27, 2022 9:34 AM
-Property: March 27, 2022 12:57 PM
-
 # Running the Project
 
 Library versions used in this project:
